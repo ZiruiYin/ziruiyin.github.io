@@ -14,36 +14,55 @@ body {
 }
 
 .name h1 {
-    margin: 0;
+    margin: 5;
+    font-size: 24px; /* Ensure this matches the size you want */
 }
 
-.social-icons a {
-    margin-left: 1rem;
+.social-links {
+    font-size: 20px;
+    color: white;
+    display: flex;
+    gap: 1rem; /* Space between links */
 }
 
-.social-icons img {
-    width: 30px;
-    height: 30px;
+.social-link {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Match font size of the title */
+    font-family: Arial, sans-serif; /* Match font family */
+}
+
+.social-link:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 .intro-section {
     display: flex;
     align-items: center;
     padding: 2rem;
-    gap: 2rem; /* Adjust space between image and text */
+    margin: 0 auto; /* Center the section horizontally */
+    max-width: 1200px; /* Set a max-width for responsiveness */
+}
+
+.photo {
+    flex: 1; /* Proportional width */
+    max-width: 25%; /* Max width for photo */
+    display: flex;
+    justify-content: center;
+    padding: 1rem; /* Padding around the photo */
 }
 
 .photo img {
     border-radius: 50%;
-    width: 200px; /* Increased size */
-    height: 200px; /* Increased size */
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .intro-text {
-    flex: 1;
-    max-width: 600px; /* Adjust width as needed */
+    flex: 4; /* Proportional width for text */
+    max-width: 75%; /* Max width for text */
     margin: 0;
-    padding: 0 1rem; /* Optional padding for spacing */
+    padding: 0 1rem; /* Padding inside the text container */
 }
 
 /* Keep the other styles the same */

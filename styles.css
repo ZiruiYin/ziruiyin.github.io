@@ -60,17 +60,15 @@ body {
 }
 
 .icon-text {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease-out;
-}
-
-.icon-text p {
-    margin: 0;
+    transition: height 0.5s ease-out, opacity 0.5s ease-out;
+    opacity: 0;
 }
 
 .icon.open .icon-text {
-    max-height: 100px; /* Adjust this value based on your content */
+    height: auto;
+    opacity: 1;
 }
 
 .others-section {

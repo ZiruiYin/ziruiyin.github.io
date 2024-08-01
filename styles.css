@@ -14,21 +14,19 @@ body {
 }
 
 .name h1 {
-    margin: 5;
-    font-size: 24px; /* Ensure this matches the size you want */
+    margin: 0;
+    font-size: 24px;
 }
 
 .social-links {
-    font-size: 20px;
-    color: white;
     display: flex;
-    gap: 1rem; /* Space between links */
+    gap: 2rem; /* Space between links */
 }
 
 .social-link {
-    color: white; /* Link color */
+    color: white;
     text-decoration: none; /* Remove underline */
-    font-size: 24px; /* Match font size of the title */
+    font-size: 24px;
     font-family: Arial, sans-serif; /* Match font family */
 }
 
@@ -62,10 +60,11 @@ body {
     flex: 4; /* Proportional width for text */
     max-width: 75%; /* Max width for text */
     margin: 0;
-    padding: 0 1rem; /* Padding inside the text container */
+    padding: 0 2rem; /* Increased padding inside the text container */
+    font-size: 18px; /* Increased font size */
+    line-height: 1.6; /* Improved readability */
 }
 
-/* Keep the other styles the same */
 .icons-section {
     display: flex;
     justify-content: space-around;

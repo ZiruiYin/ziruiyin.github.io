@@ -1,8 +1,9 @@
 function toggleText(id) {
     const element = document.getElementById(id);
-    if (element.style.display === "none" || element.style.display === "") {
-        element.style.display = "block";
+    const iconContainer = element.parentElement;
+    if (iconContainer.classList.contains('open')) {
+        iconContainer.classList.remove('open');
     } else {
-        element.style.display = "none";
+        iconContainer.classList.add('open');
     }
 }

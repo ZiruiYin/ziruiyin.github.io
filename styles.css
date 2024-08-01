@@ -7,8 +7,23 @@ body {
 .header {
     background-color: blue;
     color: white;
-    text-align: center;
-    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.name h1 {
+    margin: 0;
+}
+
+.social-icons a {
+    margin-left: 1rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
 
 .intro-section {
@@ -45,7 +60,17 @@ body {
 }
 
 .icon-text {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.icon-text p {
+    margin: 0;
+}
+
+.icon.open .icon-text {
+    max-height: 100px; /* Adjust this value based on your content */
 }
 
 .others-section {

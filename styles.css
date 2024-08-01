@@ -28,20 +28,25 @@ body {
 
 .intro-section {
     display: flex;
+    align-items: center;
     padding: 2rem;
+    gap: 2rem; /* Adjust space between image and text */
 }
 
 .photo img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increased size */
+    height: 200px; /* Increased size */
 }
 
 .intro-text {
-    margin-left: 2rem;
     flex: 1;
+    max-width: 600px; /* Adjust width as needed */
+    margin: 0;
+    padding: 0 1rem; /* Optional padding for spacing */
 }
 
+/* Keep the other styles the same */
 .icons-section {
     display: flex;
     justify-content: space-around;

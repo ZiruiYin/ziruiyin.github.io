@@ -74,6 +74,8 @@ body {
 .icon {
     text-align: center;
     cursor: pointer;
+    flex: 1;
+    margin: 0 1rem;
 }
 
 .icon img {
@@ -82,11 +84,20 @@ body {
     height: 100px;
 }
 
+.icon-title {
+    font-size: 20px; /* Bigger font size for icon titles */
+}
+
 .icon-text {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
     height: 0;
     overflow: hidden;
     transition: height 0.5s ease-out, opacity 0.5s ease-out;
     opacity: 0;
+    font-size: 16px; /* Bigger font size for explanation texts */
 }
 
 .icon.open .icon-text {
@@ -99,7 +110,31 @@ body {
     padding: 2rem;
 }
 
-.others-section img {
-    width: 200px;
+.others-section h2 {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.others-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.other-photo, .other-painting {
+    flex: 1;
+}
+
+.other-photo img, .other-painting img {
+    width: 100%;
     height: auto;
+    border-radius: 10px;
+}
+
+.other-text {
+    flex: 2;
+    font-size: 18px;
+    line-height: 1.6;
 }

@@ -47,7 +47,7 @@ body {
     max-width: 25%; /* Max width for photo */
     display: flex;
     justify-content: center;
-    padding: 1rem; /* Padding around the photo */
+    padding: 2rem; /* Padding around the photo */
 }
 
 .photo img {
@@ -57,7 +57,7 @@ body {
 }
 
 .intro-text {
-    flex: 4; /* Proportional width for text */
+    flex: 3; /* Proportional width for text */
     max-width: 75%; /* Max width for text */
     margin: 0;
     padding: 0 2rem; /* Increased padding inside the text container */

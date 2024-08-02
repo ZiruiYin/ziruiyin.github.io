@@ -11,17 +11,3 @@ function toggleText(id) {
         element.style.opacity = '1';
     }
 }
-
-function adjustHeights() {
-    const photo = document.querySelector('.other-photo img');
-    const painting = document.querySelector('.other-painting img');
-    const text = document.querySelector('.other-text');
-    const maxHeight = Math.max(photo.clientHeight, painting.clientHeight, text.clientHeight);
-
-    photo.style.height = `${maxHeight}px`;
-    painting.style.height = `${maxHeight}px`;
-    text.style.height = `${maxHeight}px`;
-}
-
-window.addEventListener('load', adjustHeights);
-window.addEventListener('resize', adjustHeights);

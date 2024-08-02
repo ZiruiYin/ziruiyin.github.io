@@ -61,7 +61,7 @@ body {
     max-width: 75%; /* Max width for text */
     margin: 0;
     padding: 0 2rem; /* Increased padding inside the text container */
-    font-size: 18px; /* Increased font size */
+    font-size: 20px; /* Increased font size */
     line-height: 1.6; /* Improved readability */
 }
 
@@ -86,7 +86,7 @@ body {
 }
 
 .icon-title {
-    font-size: 20px; /* Bigger font size for icon titles */
+    font-size: 22px; /* Bigger font size for icon titles */
 }
 
 .icon-text {
@@ -96,7 +96,7 @@ body {
     overflow: hidden;
     transition: height 0.5s ease-out, opacity 0.5s ease-out;
     opacity: 0;
-    font-size: 16px; /* Bigger font size for explanation texts */
+    font-size: 20px; /* Bigger font size for explanation texts */
     box-sizing: border-box;
 }
 
@@ -133,9 +133,13 @@ body {
     border-radius: 10px;
 }
 
+.other-painting img {
+    max-height: 300px; /* Set a maximum height to match the left photo */
+}
+
 .other-text {
     flex: 2;
-    font-size: 18px;
+    font-size: 20px; /* Increased font size */
     line-height: 1.6;
     text-align: left;
 }

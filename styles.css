@@ -68,7 +68,8 @@ body {
 .icons-section {
     display: flex;
     justify-content: space-around;
-    padding: 2rem 0;
+    padding: 2rem;
+    margin: 0 2rem; /* Add margin to the sides of the screen */
 }
 
 .icon {
@@ -98,6 +99,7 @@ body {
     transition: height 0.5s ease-out, opacity 0.5s ease-out;
     opacity: 0;
     font-size: 16px; /* Bigger font size for explanation texts */
+    box-sizing: border-box;
 }
 
 .icon.open .icon-text {
@@ -118,7 +120,7 @@ body {
 .others-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2rem;
     padding: 1rem;
 }
@@ -137,4 +139,5 @@ body {
     flex: 2;
     font-size: 18px;
     line-height: 1.6;
+    text-align: left;
 }

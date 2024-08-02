@@ -123,11 +123,10 @@ body {
     align-items: flex-start;
 }
 
-.other-photo img, .other-painting img, .inline-photo {
+.other-photo img, .other-painting img {
     width: 100%;
     border-radius: 10px;
     height: auto; /* Ensure it maintains its aspect ratio */
-    max-height: 300px; /* Set a max height to prevent excessive size */
 }
 
 .other-text {

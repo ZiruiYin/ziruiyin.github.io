@@ -117,28 +117,30 @@ body {
 
 .others-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 2rem;
     padding: 1rem;
 }
 
-.other-photo, .other-painting {
-    flex: 1;
+.other-photo, .other-painting, .other-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .other-photo img, .other-painting img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
 .other-photo img {
-    height: auto; /* Ensure it maintains its aspect ratio */
+    max-height: 300px; /* Set a maximum height */
 }
 
 .other-painting img {
-    height: 100%; /* Set height to match the left photo */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
+    max-height: 300px; /* Match the height of the left photo */
 }
 
 .other-text {

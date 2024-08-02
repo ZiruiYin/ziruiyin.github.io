@@ -129,12 +129,16 @@ body {
 
 .other-photo img, .other-painting img {
     width: 100%;
-    height: auto;
     border-radius: 10px;
 }
 
+.other-photo img {
+    height: auto; /* Ensure it maintains its aspect ratio */
+}
+
 .other-painting img {
-    max-height: 300px; /* Set a maximum height to match the left photo */
+    height: 100%; /* Set height to match the left photo */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 .other-text {

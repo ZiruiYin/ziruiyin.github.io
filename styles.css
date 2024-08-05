@@ -18,6 +18,11 @@ body {
     font-size: 24px;
 }
 
+.name-link {
+    color: white;
+    text-decoration: none;
+}
+
 .social-links {
     display: flex;
     gap: 2rem; /* Space between links */
@@ -115,31 +120,12 @@ body {
     margin-bottom: 1rem;
 }
 
-.others-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 1rem;
-    align-items: flex-start;
+.others-link {
+    font-size: 20px;
+    color: blue;
+    text-decoration: none;
 }
 
-.other-photo img, .other-painting img {
-    width: 100%;
-    border-radius: 10px;
-    height: auto; /* Ensure it maintains its aspect ratio */
-}
-
-.other-text {
-    flex: 2;
-    font-size: 20px; /* Increased font size */
-    line-height: 1.6;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-}
-
-.other-painting {
-    flex: 1;
-    display: flex;
-    align-items: flex-start;
+.others-link:hover {
+    text-decoration: underline;
 }

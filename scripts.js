@@ -11,3 +11,7 @@ function toggleText(id) {
         element.style.opacity = '1';
     }
 }
+
+function scrollToContent() {
+    document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+}

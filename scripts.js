@@ -35,5 +35,29 @@ function scrollToContent() {
 }
 
 window.addEventListener('load', () => {
-    setTimeout(scrollToContent, 2000); // Automatically scroll down after 2 seconds
+    setTimeout(() => {
+        const mainContent = document.getElementById('main-content');
+        const coverPageHeight = document.querySelector('.cover-page').offsetHeight;
+        const scrollDistance = coverPageHeight - 100; // Leave a bit of the cover page visible
+
+        let start = null;
+        const duration = 2000; // Duration of the scroll animation
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            const easedProgress = easeInOutQuad(progress / duration);
+            window.scrollTo(0, easedProgress * scrollDistance);
+
+            if (progress < duration) {
+                window.requestAnimationFrame(step);
+            } else {
+                window.scrollTo(0, scrollDistance);
+                window.addEventListener('scroll', preventScrollUp);
+            }
+        }
+
+        window.requestAnimationFrame(step);
+    }, 2000); // Automatically scroll down after 2 seconds
 });

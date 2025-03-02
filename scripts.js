@@ -13,5 +13,27 @@ function toggleText(id) {
 }
 
 function scrollToContent() {
-    document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+    const mainContent = document.getElementById('main-content');
+    const coverPageHeight = document.querySelector('.cover-page').offsetHeight;
+    const scrollDistance = coverPageHeight - 100; // Leave a bit of the cover page visible
+
+    window.scrollTo({
+        top: scrollDistance,
+        behavior: 'smooth'
+    });
+
+    window.addEventListener('scroll', preventScrollUp);
+
+    function preventScrollUp() {
+        if (window.scrollY < scrollDistance) {
+            window.scrollTo({
+                top: scrollDistance,
+                behavior: 'smooth'
+            });
+        }
+    }
 }
+
+window.addEventListener('load', () => {
+    setTimeout(scrollToContent, 2000); // Automatically scroll down after 2 seconds
+});

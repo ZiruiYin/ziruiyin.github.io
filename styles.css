@@ -148,6 +148,7 @@ body {
     color: white;
     text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .cover-page::before {
@@ -180,7 +181,6 @@ body {
     bottom: 20px;
     font-size: 18px;
     color: white;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,8 +194,4 @@ body {
     padding: 10px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-}
-
-.scroll-down:hover .arrow {
-    border-color: #ccc;
 }
